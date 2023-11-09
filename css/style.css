@@ -55,7 +55,6 @@ body {
   position: fixed;
   top: 0;
   font-size: 1.5rem;
-  width: 100%;
   height: 6rem;
   background-color: #fff;
   border-bottom: 1px solid #e4e6eb;
@@ -70,6 +69,10 @@ body {
   align-items: center;
 }   */
 
+.header_logo {
+  width: 20%;
+}
+
 .logo {
   height: 3.8rem;
   width: 3.8rem;
@@ -78,9 +81,7 @@ body {
   cursor: pointer;
 }
 
-.header_logo {
-  width: 20%;
-}
+
 .search_bar,
 .header_logo {
   display: flex;
@@ -134,7 +135,7 @@ body {
 .center_icons_header {
   display: flex;
   align-items: center;
-  font-size: 2.3rem;
+  font-size: 2rem;
   margin: 0 5px 0 5px;
   cursor: pointer;
   color: #65676b;
@@ -143,6 +144,8 @@ body {
   cursor: pointer;
   transition: background-color 0.3s;
 }
+
+
 .center_icons_header_svg {
   display: flex;
   align-items: center;
@@ -152,6 +155,9 @@ body {
   position: relative;
   cursor: pointer;
   transition: background-color 0.3s;
+}
+.center_icons_header_svg:hover {
+  color: #1b74e4;
 }
 
 .center_icons_hover:hover {
@@ -353,12 +359,13 @@ body {
   color: #1b74e4;
 }
 
-.left_nav p {
+.left_nav p, .left_nav a {
   font-size: 1.3rem;
   color: var(--color-grey-light-3);
   color: #474748;
   padding-left: 5px;
   font-weight: 600;
+  text-decoration: none;
 }
 .see_more {
   color: var(--color-border-bottom) !important;
@@ -430,6 +437,7 @@ hr {
   padding: 20px 0 0 0;
   margin: 0 auto;
   max-width: 603px;
+  max-width: 610px;
   background: #f0f2f5;
   /* margin-left: 26.5%; */
 }
@@ -446,6 +454,7 @@ hr {
   gap: 6px;
   margin-left: 3%;
   position: relative;
+  /* overflow-x: scroll; */
 }
 
 .my__story-card {
@@ -703,7 +712,7 @@ hr {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 424px;
+  /* max-width: 424px; */
 }
 .smash-code-logo-like,
 .smash-code-logo-like-comments {
@@ -893,9 +902,11 @@ hr {
 
 .cards-three__header-three {
   display: flex;
-  justify-content: space-evenly;
+  /* justify-content: space-between; */
+  justify-content: space-around;
   align-items: center;
   font-size: 1.5rem;
+  max-width: 530px;
   width: 100%;
   height: 6.5rem;
   transform: translateY(5rem);
@@ -907,6 +918,9 @@ hr {
 .cards-three__img-seeo {
   width: 100%;
   height: auto;
+}
+.not-shown{
+  display: none;
 }
 .cards-three__heading-1 {
   color: #59595a;
@@ -942,7 +956,7 @@ hr {
   display: flex;
   transform: translateX(25px);
 }
-.aside-heading__3dots {
+.aside-heading__3dots-kety {
   font-size: 2rem;
   font-weight: bolder;
   padding: 0rem 1rem;
@@ -962,7 +976,7 @@ hr {
   position: relative;
   height: 4rem;
   width: 4rem;
-  border-radius: 10px;
+  border-radius: 100px;
   cursor: pointer;
 }
 .cards-three__photo-kethy {
@@ -1015,13 +1029,13 @@ hr {
   font-size: 1.4rem;
 }
 /* from Responsive css add code */
-.cards-three__header-three {
+/* .cards-three__header-three {
   position: relative !important;
-}
+} */
 .cards-three__photo-k {
   position: absolute !important;
   top: 30px !important;
-  left: 48px !important;
+  left: 37px !important;
   height: 25px !important;
   width: 25px !important;
   border-radius: 50px !important;
@@ -1176,6 +1190,12 @@ hr {
   text-decoration: none;
   display: flex;
   align-items: center;
+
+}
+.side-navL__link img {
+width: 25px;
+height: 25px;
+  border-radius: 100px;
 }
 .side-navL__link span {
   padding: 0 0 0 1.5rem;
@@ -1216,6 +1236,7 @@ hr {
   position: relative;
   bottom: 6rem;
   left: 4.8rem;
+  left: 4.5rem;
   margin-right: 2rem;
   color: #59595a;
 }
@@ -1490,3 +1511,23 @@ hr {
 .border-img-left {
   margin-left: -45px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
