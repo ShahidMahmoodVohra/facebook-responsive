@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+    <title>Groups | Facebook</title>
+
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Quicksand:wght@300 display=swap"
+      rel="stylesheet"/> -->
+
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    /> -->
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <!-- <link rel="stylesheet" href="./css/responsive.css" /> -->
+    <!-- <link rel="stylesheet" href="./css/style.css" /> -->
+
+    <!-- <link rel="stylesheet" href="./css/friends.css" /> -->
+    <link rel="stylesheet" href="./css/groups.css" />
+    <!-- <link rel="stylesheet" href="./css/friends-responsive.css" /> -->
+  </head>
+  <body>
+    <div class="container">
+
+      <header class="header">
+        <div class="header__logo">
+          <img src="./images/fb_logo.png" class="header__logo-fb" />
+
+          <div class="search__bar">
+            <button class="search__button">
+              <i class="ri-search-line"></i>
+            </button>
+
+            <input
+              type="text"
+              class="search__input"
+              placeholder="Search Facebook"
+            />
+          </div>
+          <div class="center-icons__header menu-1">
+            <i class="ri-menu-line"></i>
+          </div>
+        </div>
+
+        <div class="center-icons center-icons-none">
+          <div class="center-icons__header">
+            <a href="./index.html">
+              <i class="ri-home-5-line "></i>
+            </a>
+          </div>
+          <div class="center-icons__header">
+            <a href="">
+            <i class="ri-tv-2-line"></i>
+          </a>
+          </div>
+          <div class="center-icons__header">
+            <a href="">
+            <i class="ri-store-2-line"></i>
+            </a>
+          </div>
+          <div class="center-icons__header">
+            <a href="">
+            <i class="ri-team-line active"></i>
+            </a>
+          </div>
+          <div class="center-icons__header gamepad">
+            <a href="">
+            <i class="ri-gamepad-line"></i>
+            </a>
+          </div>
+          <div class="center-icons__header">
+            <a href="./friends.html">
+            <i class="ri-menu-line"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="user-nav">
+          <div class="user-nav__icon-box plus-icon">
+            <i class="ri-add-line"></i>
+          </div>
+          <div class="user-nav__icon-box more-fill">
+            <i class="ri-more-fill"></i>
+          </div>
+          <div class="user-nav__icon-box">
+            <i class="ri-messenger-fill"></i>
+          </div>
+          <div class="user-nav__icon-box">
+            <i class="ri-notification-2-fill"></i>
+            <span class="user-nav__notification">8</span>
+          </div>
+          <div class="user-nav-user">
+            <img src="./Images/shahid.jpg" class="user-nav__user-photo" />
+          </div>
+        </div>
+      </header>
+      <!-- -----------------------Header for Mobile-------------- -->
+      <header class="header__mobile">
+        <div class="header__logo-mobile">
+          <!-- <img src="./Images/fb_logo.png" class="header__logo-fb-mobile" /> -->
+
+          <svg
+            aria-label="Facebook logo"
+            class="header__logo-fb-mobile"
+            role="img"
+            viewBox="0 0 120 24"
+            width="120"
+          >
+            <path
+              d="m109.202 14.864 4.404-7.03h4.746l-4.622 7.278 4.808 7.463h-4.746l-4.59-7.215v7.215h-4.467V.433l4.467-.402v14.833ZM98.596 14.524c0-1.951-.807-3.5-2.885-3.5s-2.885 1.549-2.885 3.5v1.363c0 1.95.807 3.499 2.885 3.499s2.885-1.549 2.885-3.5v-1.362ZM88.36 15.577v-.743c0-4.243 2.42-7.309 7.351-7.309s7.351 3.066 7.351 7.309v.743c0 4.242-2.42 7.308-7.351 7.308-4.932 0-7.351-3.066-7.351-7.308ZM82.406 14.524c0-1.951-.807-3.5-2.884-3.5-2.079 0-2.885 1.549-2.885 3.5v1.363c0 1.95.806 3.499 2.885 3.499 2.077 0 2.884-1.549 2.884-3.5v-1.362Zm-10.235 1.053v-.743c0-4.243 2.419-7.309 7.35-7.309 4.932 0 7.352 3.066 7.352 7.309v.743c0 4.242-2.42 7.308-7.352 7.308-4.931 0-7.35-3.066-7.35-7.308ZM66.216 14.648c0-2.075-.806-3.623-2.946-3.623-1.83 0-2.823 1.3-2.823 3.406v1.548c0 2.106.993 3.407 2.823 3.407 2.14 0 2.946-1.549 2.946-3.623v-1.115Zm4.467 1.022c0 4.118-1.985 7.215-6.08 7.215-2.233 0-3.783-1.115-4.404-2.539v2.23h-4.218V.434L60.447.03v9.848c.651-1.3 2.078-2.354 4.157-2.354 4.094 0 6.079 3.097 6.079 7.216v.929ZM44.723 13.843h5.397v-.372c0-1.61-.651-2.88-2.606-2.88-2.016 0-2.791 1.27-2.791 3.252m-4.466 1.92v-1.301c0-4.18 2.388-6.937 7.257-6.937 4.59 0 6.607 2.787 6.607 6.875v2.353h-9.398c.093 2.014.992 2.912 3.474 2.912 1.675 0 3.443-.341 4.745-.898l.807 3.065c-1.179.62-3.598 1.084-5.738 1.084-5.645 0-7.754-2.818-7.754-7.153M35.388 7.525c1.737 0 3.38.372 4.28.991l-.992 3.159c-.683-.34-1.8-.682-2.978-.682-2.42 0-3.474 1.394-3.474 3.778v.868c0 2.384 1.055 3.778 3.474 3.778 1.179 0 2.295-.34 2.978-.682l.992 3.16c-.9.618-2.543.99-4.28.99-5.242 0-7.63-2.818-7.63-7.34v-.68c0-4.522 2.388-7.34 7.63-7.34M15.973 15.732c0 2.198.806 3.654 2.884 3.654 1.83 0 2.76-1.332 2.76-3.438v-1.486c0-2.106-.93-3.437-2.76-3.437-2.078 0-2.884 1.455-2.884 3.654v1.053Zm-4.467-.991c0-4.119 1.954-7.216 6.049-7.216 2.233 0 3.598 1.146 4.249 2.57v-2.26h4.28v14.74h-4.28v-2.23c-.62 1.425-2.016 2.54-4.25 2.54-4.094 0-6.048-3.097-6.048-7.215v-.93ZM9.274 3.592c-1.396 0-1.8.62-1.8 1.982v2.26h3.723l-.372 3.655h-3.35v11.086H3.009V11.49H0V7.835h3.009V5.636C3.009 1.951 4.497 0 8.654 0c.9 0 1.954.062 2.605.155v3.437H9.274Z"
+            ></path>
+          </svg>
+        </div>
+        <div class="user-nav-mobile">
+          <div class="user-nav__icon-box-mobile">
+            <i class="ri-add-line"></i>
+          </div>
+          <div class="user-nav__icon-box-mobile">
+            <i class="ri-search-line"></i>
+          </div>
+          <div class="user-nav__icon-box-mobile">
+            <i class="ri-messenger-fill"></i>
+          </div>
+        </div>
+      </header>
+
+      <div class="center__icon-box">
+        <div class="center__icon">
+          <i class="ri-home-line active"></i>
+        </div>
+        <div class="center__icon">
+          <i class="ri-tv-2-line"></i>
+        </div>
+        <div class="center__icon">
+          <i class="ri-group-line"></i>
+        </div>
+        <div class="center__icon">
+          <i class="ri-store-2-line"></i>
+        </div>
+        <div class="center__icon">
+          <i class="ri-notification-2-line"></i>
+          <span class="center__icon-notification">8</span>
+        </div>
+        <div class="center__icon">
+          <i class="ri-menu-line"></i>
+        </div>
+      </div>
+
+      <div class="header__bottom-box">
+        <div class="header__bottom-img">
+          <img src="./Images/user-7-.png" class="user__photo-7" />
+        </div>
+
+        <div class="header__bottom-input">
+          <input
+            type="text"
+            class="search__bottom"
+            placeholder="What's on your mind?"
+          />
+        </div>
+
+        <div class="header__bottom-image-fill">
+          <i class="ri-image-fill"></i>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="left__section">
+          <div class="left__section-box left__section-box-top">
+            <h4>Groups</h4>
+            <a href="" class="left__section-link"
+              ><i class="ri-settings-5-fill gear__color"></i>
+            </a>
+          </div>
+
+          <div class="search__bar-left">
+            <button class="search__button-left">
+              <i class="ri-search-line"></i>
+            </button>
+
+            <input
+              type="text"
+              class="search__input-left"
+              placeholder="Search Facebook"
+            />
+          </div>
+
+          <div class="left__section-box left__section-box-active">
+            <a href="" class="left__section-link">
+              <i class="ri-article-line color-active"></i>
+            </a>
+            <span>Your Feed</span>
+          </div>
+
+          <div class="left__section-box left__section-box-universal">
+            <a href="" class="left__section-link">
+              <i class="ri-compass-3-fill color-transparent"></i>
+            </a>
+            <span>Discover</span>
+          </div>
+
+          <div class="left__section-box left__section-box-universal">
+            <a href="" class="left__section-link">
+              <i class="ri-group-2-fill color-transparent"></i>
+            </a>
+            <span>Your groups </span>
+          </div>
+
+          <div class="left__section-box-plus">
+            <i class="ri-add-line"></i>
+            <a href="">Create New Group</a>
+          </div>
+
+          <div class="border-bottom"></div>
+
+          <div class="left__section-box-smash">
+            <h3 class="heading__group">Groups you manage</h3>
+            <div class="smash__group">
+              <div class="smash__group-box">
+                <img src="./Images/smash.jpg" class="smash__group-image">
+              </div>
+              <div class="smash__description">
+                <h4>Smash Code Community</h4>
+                <span>Last active a day ago</span>
+              </div>
+              <div class="smash__icon smash__icon-res">
+                <i class="ri-pushpin-fill"></i>
+                <i class="ri-arrow-right-s-line smash__icon-bc"></i>
+              </div>
+            </div>
+
+            <div class="border-bottom"></div>
+
+          </div>
+
+          <div class="left__section-box-groups-joined">
+            <div class="left__section-box-gj">
+              <h4>Group you've joined</h4>
+              <a href="" class="left__section-box-gj-a">See all</a>
+            </div>
+            
+            <div class="smash__group">
+              <div class="smash__group-box">
+                <img src="./Images/brakely.jpg" class="smash__group-image">
+              </div>
+              <div class="smash__description">
+                <h4>eCommerece by Brakely</h4>
+                <h4>Learning</h4>
+                <span>Last active one hour ago</span>
+              </div>
+              <div class="smash__icon smash__icon-res">
+                <i class="ri-pushpin-fill"></i>
+                <i class="ri-arrow-down-s-line smash__icon-bc"></i>
+              </div>
+            </div>
+
+            <div class="smash__group">
+              <div class="smash__group-box">
+                <img src="./Images/hisham.jpg" class="smash__group-image">
+              </div>
+              <div class="smash__description">
+                <h4>Learn Freelancing with</h4>
+                <h4> Hisham Sarwar</h4>
+                <span>Last active a day ago</span>
+              </div>
+              <div class="smash__icon smash__icon-res">
+                <i class="ri-pushpin-fill"></i>
+                <i class="ri-arrow-down-s-line smash__icon-bc"></i>
+              </div>
+            </div>
+            <div class="smash__group">
+              <div class="smash__group-box">
+                <img src="./Images/website-design.jpg" class="smash__group-image">
+              </div>
+              <div class="smash__description">
+                <h4>Learn website Designing</h4>
+                <span>Last active two day ago</span>
+              </div>
+              <div class="smash__icon ">
+                <i class="ri-arrow-down-s-line smash__icon-bc"></i>
+              </div>
+            </div>
+            <div class="smash__group">
+              <div class="smash__group-box">
+                <img src="./Images/cute-cartoon.jpg" class="smash__group-image">
+              </div>
+              <div class="smash__description">
+                <h4>Cute Cartoon Community</h4>
+                <span>Last active one week ago</span>
+              </div>
+              <div class="smash__icon">
+                <i class="ri-arrow-down-s-line smash__icon-bc"></i>
+              </div>
+            </div>
+            <div class="smash__group">
+              <div class="smash__group-box">
+                <img src="./Images/sc-community.jpg" class="smash__group-image">
+              </div>
+              <div class="smash__description">
+                <h4>Smash Code Community</h4>
+                <span>Last active a day ago</span>
+              </div>
+              <div class="smash__icon">
+                <i class="ri-arrow-down-s-line smash__icon-bc"></i>
+              </div>
+            </div>
+            
+            
+          </div> 
+
+        </div>
+
+        <div class="main__section">
+          <div class="main__section-heading-top">
+            <h4>Recent activity</h4>
+          </div>
+
+          
+          <div class="main__section-1">
+            <div class="main__section-1a">
+              <i class="ri-compass-3-fill"></i>
+              <p>Khaqan and 3 friends are members</p>
+            </div>
+            <div class="border-bottom"></div>
+
+            <div class="main__section-1b">
+              <div class="main__section-1b-img-section">
+                <div class="main__section-1b-img-box">
+                  <img src="./Images/smash.jpg" class="img-box-fiverr">
+                  <div class="logo-inc">
+                    <h4>Smash Code</h4>
+                    <span>2 min ago.</span>
+                    <i class="ri-earth-fill"></i>
+                  </div>
+                </div>
+                <div class="three__dots">
+                  <i class="ri-more-fill"></i> 
+                </div>
+              </div>
+              <div class="main__section-1b-img-box">
+                <img src="./Images/bootstap.jpg" class="design__geomatric">
+              </div>
+              <div class="like-love">
+                <div class="like">
+                  <img src="./Images/like-img.svg" class="like__img">
+                  <img src="./Images/love-img.svg" class="love__img">
+                  <p class="like-span">12</p>
+                </div>
+                <div class="love-comments">
+                <h4 class="comments-11"> <span>5</span>  Shares <span>7</span>  Comments</h4>
+                </div>
+              </div>
+
+              <div class="border-bottom"></div>
+            </div>
+            <div class="like-comments-share">
+              <div class="like">
+                <i class="ri-thumb-up-line"></i>
+                <span>Like</span>
+              </div>
+              <div class="comments">
+                <i class="ri-chat-3-line"></i>
+                <span>Comments</span>
+              </div>
+              <div class="share">
+                <i class="ri-share-forward-line"></i>
+                <span>Share</span>
+              </div>
+            </div>
+
+            <div class="border-bottom"></div>
+
+            <div class="write-comments-section">
+
+              <div class="comments-section-image">
+                <img src="./Images/shahid.jpg" class="comments-section-img">
+                <i class="ri-arrow-down-s-line"></i>
+              </div>
+
+              <div class="comments-section-input">
+                <div class="input-answer">
+                  <input type="text" placeholder="Write an answer...">
+                </div>
+                <div class="input-icons">
+                  <i class="ri-emoji-sticker-line hide-3"></i>
+                  <i class="ri-user-smile-line hide-3"></i>
+                  <i class="ri-star-smile-line hide-3"></i>
+                  <i class="ri-file-gif-line hide"></i>
+                  <i class="ri-camera-line hide"></i>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="main__section-1">
+            <div class="main__section-1a">
+              <i class="ri-compass-3-fill"></i>
+              <p>Suggested post from a public group</p>
+            </div>
+            <div class="border-bottom"></div>
+            <div class="main__section-1b">
+              <div class="main__section-1b-img-section">
+
+                <div class="main__section-1b-img-box">
+                  <img src="./Images/website-design.jpg" class="img-box-fiverr">
+                  <div class="logo-inc">
+                    <h4>Logo Inc</h4>
+                    <span>35 m.</span>
+                    <i class="ri-earth-fill"></i>
+                  </div>
+                </div>
+
+                <div class="three__dots">
+                  <i class="ri-more-fill"></i> 
+                </div>
+                
+              </div>
+
+              <div class="main__section-1b-img-box">
+                <img src="./Images/design-geometric.jpg" class="design__geomatric">
+              </div>
+              <h4 class="comments-11"> 11 Comments</h4>
+              <div class="border-bottom"></div>
+
+            </div>
+            <div class="like-comments-share">
+              <div class="like">
+                <i class="ri-thumb-up-line"></i>
+                <span>Like</span>
+              </div>
+              <div class="comments">
+                <i class="ri-chat-3-line"></i>
+                <span>Comments</span>
+              </div>
+              <div class="share">
+                <i class="ri-share-forward-line"></i>
+                <span>Share</span>
+              </div>
+            </div>
+            <div class="border-bottom"></div>
+            <div class="write-comments-section">
+
+              <div class="comments-section-image">
+                <img src="./Images/shahid.jpg" class="comments-section-img">
+                <i class="ri-arrow-down-s-line"></i>
+              </div>
+
+              <div class="comments-section-input">
+                <div class="input-answer">
+                  <input type="text" placeholder="Write an answer...">
+                </div>
+                <div class="input-icons">
+                  <i class="ri-emoji-sticker-line hide-3"></i>
+                  <i class="ri-user-smile-line hide-3"></i>
+                  <i class="ri-star-smile-line hide-3"></i>
+                  <i class="ri-file-gif-line hide"></i>
+                  <i class="ri-camera-line hide"></i>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="main__section-1 margin-last">
+            <div class="main__section-1a">
+              <i class="ri-compass-3-fill"></i>
+              <p>From a group with members who like a related Page</p>
+            </div>
+            <div class="border-bottom"></div>
+
+            <div class="main__section-1b">
+              <div class="main__section-1b-img-section">
+                <div class="main__section-1b-img-box">
+                  <img src="./Images/seo.jpg" class="img-box-fiverr">
+                  <div class="logo-inc">
+                    <h4>Logo Inc</h4>
+                    <span>2 days ago.</span>
+                    <i class="ri-earth-fill"></i>
+                  </div>
+                </div>
+                <div class="three__dots">
+                  <i class="ri-more-fill"></i> 
+                </div>
+              </div>
+              <div class="main__section-1b-img-box">
+                <img src="./Images/fiver.jpg" class="design__geomatric">
+              </div>
+              <h4 class="comments-11"> 7 Comments</h4>
+              <div class="border-bottom"></div>
+            </div>
+            <div class="like-comments-share">
+              <div class="like-2">
+                <i class="ri-thumb-up-line"></i>
+                <span>Like</span>
+              </div>
+              <div class="comments">
+                <i class="ri-chat-3-line"></i>
+                <span>Comments</span>
+              </div>
+              <div class="share">
+                <i class="ri-share-forward-line"></i>
+                <span>Share</span>
+              </div>
+            </div>
+
+            <div class="border-bottom"></div>
+
+            <div class="write-comments-section">
+
+              <div class="comments-section-image">
+                <img src="./Images/shahid.jpg" class="comments-section-img">
+                <i class="ri-arrow-down-s-line"></i>
+              </div>
+
+              <div class="comments-section-input">
+                <div class="input-answer">
+                  <input type="text" placeholder="Write an answer...">
+                </div>
+                <div class="input-icons">
+                  <i class="ri-emoji-sticker-line hide-3"></i>
+                  <i class="ri-user-smile-line hide-3"></i>
+                  <i class="ri-star-smile-line hide-3"></i>
+                  <i class="ri-file-gif-line hide"></i>
+                  <i class="ri-camera-line hide"></i>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+
+          
+
+
+        
+        <div class="right__section">
+        
+                  <div class=" right__section-box-cc left__section-box-gj">
+                    <h4>Your Community Chats</h4>
+                    <a href="" class="left__section-box-gj-a"> Create</a>
+                  </div>
+        
+                  <div class="right__section-box-online-help-main">
+                    <div class="right__section-online-images-box">
+                      <div>
+                        <img src="./Images/fiverr.jpg" class="fiverr__img-2">
+                      </div>
+                       <div>
+                       <img src="./Images/laptop.jpg" class="laptop__img-1">
+                      </div>
+        
+                      
+                    </div>
+                    <div class="right__section-online-description">
+                        <span class="right__section-online-span">
+                          fiverr, upwork, pakistani freelancer,
+                          freelan...
+                        </span>
+                        <div class="right__section-online-career-help">
+                          <h4>Online Career Help</h4>
+                           <i class="ri-more-fill fill__circle"></i> 
+                        </div>
+                        <p class="online__para">
+                          Message unavailable. 45 w
+                        </p>
+        
+        
+                    </div>
+                  </div>
+                  <div class="right__section-box-online-help-main margin__bottom">
+                    <div class="right__section-online-images-box">
+                      <div>
+                        <img src="./Images/fiverr.jpg" class="fiverr__img-2">
+                      </div>
+                       <div>
+                       <img src="./Images/chat-icon-pink.jpg" class="laptop__img-1">
+                      </div>
+        
+                      
+                    </div>
+                    <div class="right__section-online-description">
+                        <span class="right__section-online-span">
+                          fiverr, upwork, pakistani freelancer,
+                          freelan...
+                        </span>
+                        <div class="right__section-online-career-help">
+                          <h4>Freelancer ||Online Career Edu</h4>
+                           <i class="ri-more-fill fill__circle"></i> 
+                        </div>
+                        <p class="online__para">
+                          A contact name the chat freelancer...
+                        </p>
+        
+        
+                    </div>
+                  </div>
+        
+                  <div class=" right__section-box-cc left__section-box-gj">
+                    <h4>Chat you should join</h4>
+                  </div>
+        
+                  <div class="right__section-box-online-help-main">
+                    <div class="right__section-online-images-box-sc">
+                      <div>
+                        <img src="./Images/smash.jpg" class="sc__img-1">
+                      </div>
+                      <div>
+                       <img src="./Images/border-img.jpg" class="hand__img-2">
+                      </div>
+                    </div>
+        
+                    <div class="right__section-online-description">
+                        <span class="right__section-online-span">
+                          Smash Code Community
+                        </span>
+                        <div class="right__section-online-career-help">
+                          <h4>General Chat</h4>
+                        </div>
+                        <p class="online__para-sc">
+                          Click to join
+                        </p>
+        
+        
+                    </div>
+                  </div>
+                  <div class="right__section-box-online-help-main">
+                    <div class="right__section-online-images-box-sc">
+                      <div>
+                        <img src="./Images/5x.png" class="sc__img-1">
+                      </div>
+                      <div>
+                       <img src="./Images/chat-icon.png" class="hand__img-2">
+                      </div>
+                    </div>
+        
+                    <div class="right__section-online-description">
+                        <span class="right__section-online-span">
+                          The Fiverrologist:Copywriter & Freelancer
+                        </span>
+                        <div class="right__section-online-career-help">
+                          <h4>Ask The Fiverrologist</h4>
+                        </div>
+                        <p class="online__para-sc">
+                          Click to join
+                        </p>
+        
+        
+                    </div>
+                  </div>
+                  <div class="right__section-box-online-help-main">
+                    <div class="right__section-online-images-box-sc">
+                      <div>
+                        <img src="./Images/bootstap.jpg" class="sc__img-1">
+                      </div>
+                      <div>
+                       <img src="./Images/fund.png" class="hand__img-2">
+                      </div>
+                    </div>
+        
+                    <div class="right__section-online-description">
+                        <span class="right__section-online-span">
+                          Level Up Your Bootstrap With Muhammad Ismail
+                        </span>
+                        <div class="right__section-online-career-help">
+                          <h4>Learn Together, Share Together</h4>
+                        </div>
+                        <p class="online__para-sc">
+                          Click to join
+                        </p>
+        
+        
+                    </div>
+                  </div>
+                  <div class="right__section-box-online-help-main">
+                    <div class="right__section-online-images-box-sc">
+                      <div>
+                        <img src="./Images/user-3.jpg" class="sc__img-1">
+                      </div>
+                      <div>
+                       <img src="./Images/chat-icon.png" class="hand__img-2">
+                      </div>
+                    </div>
+        
+                    <div class="right__section-online-description">
+                        <span class="right__section-online-span">
+                          The best web desiginer
+                        </span>
+                        <div class="right__section-online-career-help">
+                          <h4>Sami Khan</h4>
+                        </div>
+                        <p class="online__para-sc">
+                          Click to join
+                        </p>
+        
+        
+                    </div>
+                  </div>
+                  <div class="right__section-box-online-help-main">
+                    <div class="right__section-online-images-box-sc">
+                      <div>
+                        <img src="./Images/user-6.jpg" class="sc__img-1">
+                      </div>
+                      <div>
+                       <img src="./Images/border-img.jpg" class="hand__img-2">
+                      </div>
+                    </div>
+                    <div class="right__section-online-description">
+                        <span class="right__section-online-span">
+                          HTML,CSS, Javascript & React
+                        </span>
+                        <div class="right__section-online-career-help">
+                          <h4>Angela Yu</h4>
+                           <!-- <i class="ri-more-fill fill__circle"></i>  -->
+                        </div>
+                        <p class="online__para-last">
+                          Click to join
+                        </p>
+                    </div>
+                  </div> 
+        
+                  <div class="see__more-last">
+                    <h4>See more</h4>
+                  </div>
+        </div>
+
+      </div>
+
+    </div>  
+
+          
+
+
+
+
+    <script>
+      // Assuming you're using vanilla JavaScript
+      document.addEventListener("DOMContentLoaded", function () {
+        const items = document.querySelectorAll(".repeating-group-item");
+
+        items.forEach((item) => {
+          item.addEventListener("click", function () {
+            // Remove "active" class from all items
+            items.forEach((otherItem) => {
+              otherItem.classList.remove("active");
+            });
+
+            // Add "active" class to the clicked item
+            item.classList.add("active");
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
