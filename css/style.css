@@ -136,6 +136,7 @@ body {
   display: flex;
   align-items: center;
   font-size: 2rem;
+  font-size: 2.5rem;
   margin: 0 5px 0 5px;
   cursor: pointer;
   color: #65676b;
@@ -155,6 +156,10 @@ body {
   position: relative;
   cursor: pointer;
   transition: background-color 0.3s;
+} 
+
+.center_icons_header a{
+  color: #65676b;
 }
 .center_icons_header_svg:hover {
   color: #1b74e4;
@@ -167,10 +172,10 @@ body {
 .center_icons_header i.active::after {
   content: "";
   position: absolute;
-  top: 5.2rem;
+  top: 5.6rem;
   right: 0;
   border-bottom: 3.7px solid #1b74e4;
-  width: 10rem;
+  width: 11rem;
   transition: color 0.5s;
 }
 
@@ -207,7 +212,8 @@ body {
   position: relative;
 }
 .nav_icon i,
-.nav_icon-i {
+.nav_icon-i, 
+.nav_icon-i a {
   background: #e4e6eb;
   padding: 1rem;
   border-radius: 50px;

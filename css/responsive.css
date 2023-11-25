@@ -51,9 +51,9 @@
     max-width: 720px !important;
   }
 
-  .icon_ellips_remove {
+  /* .icon_ellips_remove {
     display: none !important;
-  }
+  } */
   .icon_remove {
     display: initial !important;
   }
@@ -63,10 +63,12 @@
   }
 
   .user_bars_position {
-    margin-left: -8rem !important;
+    /* margin-left: -8rem !important; */
+    display: none ;
   }
   .faplus-right-margin {
-    margin-right: -11px !important;
+    /* margin-right: -11px !important; */
+    display: none !important;
   }
 
   .icon__arrow {
@@ -231,12 +233,12 @@
   .right_section {
     display: none !important;
   }
-  .icon_ellips_remove {
+  /* .icon_ellips_remove {
     display: none !important;
-  }
+  } */
 
   .icon_remove {
-    display: initial !important;
+    /* display: initial !important; */
   }
 
   .center_section {
@@ -315,11 +317,14 @@
     display: flex !important;
     align-items: center !important;
     justify-content: space-between;
+    padding: 11px 0;
   }
 
   .logo-mobile {
-    height: 8rem !important;
-    width: 16rem !important;
+    height: 5rem !important;
+    width: 5rem !important;
+    padding-top: 5px;
+    padding-left: 5px;
   }
 
   .user_bars_icon {

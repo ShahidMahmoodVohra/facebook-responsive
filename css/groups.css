@@ -41,6 +41,8 @@ body {
   /* min-height: 50rem; */
 }
 
+
+
 .header {
   background-color: #fff;
   border-bottom: 1px solid #e4e6eb;
@@ -112,6 +114,7 @@ body {
   cursor: pointer;
   font-size: 28px;
 }
+
 
 .center-icons__header a {
   color: #65676b;
@@ -185,6 +188,21 @@ body {
   background: #ced0d4;
 }
 
+.nav_icon i,
+.nav_icon-i, 
+.nav_icon-i a {
+  background: #e4e6eb;
+  padding: 1rem;
+  border-radius: 50px;
+  height: 4rem;
+  width: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  position: relative;
+}
+
 .content {
   display: flex;
 }
@@ -194,6 +212,8 @@ body {
   background-color: #fff;
   height: 100vh;
   overflow: scroll;
+
+  position: sticky;
 }
 
 .left__section::-webkit-scrollbar {
@@ -458,7 +478,7 @@ body {
   width: calc(100vw - (27.5vw + 26.5vw + 40px));
 }
 
-.main__section::-webkit-scrollbar {
+ .main__section::-webkit-scrollbar {
   width: 10px;
 }
 .main__section::-webkit-scrollbar-track {
@@ -474,7 +494,7 @@ body {
 }
 .main__section:hover::-webkit-scrollbar-thumb {
   background: #cccccc;
-}
+} 
 
 .main__section-heading-top {
   font-size: 14px;
@@ -937,13 +957,11 @@ body {
 }
 
 @media screen and (max-width: 1099px) {
-  .menu,
-  .plus-icon {
+  .menu {
     display: initial;
   }
 
-  .gamepad,
-  .more-fill {
+  .gamepad {
     display: none;
   }
 
