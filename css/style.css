@@ -448,8 +448,9 @@ hr {
 }
 
 .center_section::-webkit-scrollbar {
-  width: 0;
+  width: 10px;
 }
+
 
 .top__box {
   width: 100%;

@@ -64,7 +64,7 @@
 
   .user_bars_position {
     /* margin-left: -8rem !important; */
-    display: none ;
+    display: none;
   }
   .faplus-right-margin {
     /* margin-right: -11px !important; */
@@ -386,8 +386,16 @@
     display: flex !important;
     align-items: center !important;
     justify-content: space-around !important;
+
+    
+      display: flex !important;
+      justify-content: space-between !important;
+      align-items: center !important;
+      padding: 10px 30px 10px 15px !important;
+      background: # !important;
+      border-bottom: 5px solid lightgray !important;
+    
   }
-  
 
   .user_photo-mobile-two {
     position: absolute !important;
@@ -409,12 +417,10 @@
     align-items: center !important;
   }
 
- 
-
   .search_icon {
     display: none !important;
   }
-  
+
   .search_input-2,
   .search_input {
     display: flex !important;
@@ -883,10 +889,9 @@
   }
 }
 @media screen and (max-width: 320px) {
-
   .logo-mobile {
-    height: 7rem !important;
-    width: 12rem !important;
+    height: 4.5rem !important;
+    width: 4.5rem !important;
   }
 
   .center_icons-mobile i.active::after {
@@ -894,20 +899,23 @@
     top: 10.9rem !important;
   }
 
+  .header1_logo {
+    padding: 7px 0 15px 0 !important;
+  }
+
+
   .hamburger {
     top: 99px !important;
     right: 16px !important;
-}
+  }
 
   .user_bars_icon i {
-    margin: 0 6px 0 6px !important;
+    margin: 0 4px 0 4px !important;
   }
 
-.user_bars_icon {
+  .user_bars_icon {
     margin-left: 0px !important;
   }
-
-  
 
   .search_input-2 {
     width: 19rem !important;
@@ -929,15 +937,14 @@
   .cards-three__img-seo,
   .top__box,
   .cards-three,
-  .cards-three__header-three 
-   {
-    max-width: 319px !important;
+  .cards-three__header-three {
+    max-width: 318px !important;
   }
 
-  .cards-three__heading-1{
+  .cards-three__heading-1 {
     display: none;
   }
-  .not-shown{
+  .not-shown {
     display: initial !important;
   }
 
@@ -948,22 +955,6 @@
   .smash-code-insights {
     padding: 1rem 1rem 0 1rem !important;
   }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
   .cards-three__khurram-details {
     height: auto !important;
@@ -977,8 +968,7 @@
     left: 29px !important;
     height: 23px !important;
     width: 23px !important;
-}
-
+  }
 }
 /* @media screen and (max-width: 325px) {
   .logo-mobile {
