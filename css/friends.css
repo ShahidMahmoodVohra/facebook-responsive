@@ -703,6 +703,11 @@ body {
     padding: 0px 20px;
     position: relative;
     cursor: pointer;
+    color: #65676b;
+  }
+
+  .center__icon a{
+    text-decoration: none;
   }
   /* .center__icon i.active {
     color: #1b74e4;
