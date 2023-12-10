@@ -30,7 +30,6 @@ body {
   background-color: #f0f2f5;
   background: #f0f2f5;
   overflow-x: hidden;
-  overflow: hidden;
 
   scroll-behavior: smooth;
   min-height: 100vh;
@@ -474,10 +473,10 @@ body {
   background-color: #f0f2f5;
   /* background-color: lightcoral; */
   height: 100vh;
-  overflow: scroll;
+  /* overflow: scroll; */
   width: calc(100vw - (27.5vw + 26.5vw + 40px));
 }
-
+/* 
  .main__section::-webkit-scrollbar {
   width: 10px;
 }
@@ -494,7 +493,7 @@ body {
 }
 .main__section:hover::-webkit-scrollbar-thumb {
   background: #cccccc;
-} 
+}  */
 
 .main__section-heading-top {
   font-size: 14px;
