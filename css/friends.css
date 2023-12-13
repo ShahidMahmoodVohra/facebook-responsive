@@ -108,21 +108,20 @@ body {
   cursor: pointer;
   font-size: 28px;
 }
-.center-icons__header a{
+.center-icons__header a {
   color: #65676b;
-
-
+  text-decoration: none;
 }
 
 .center-icons__header:hover {
   background: #f0f2f5;
 }
 
-.center-icons__header i.active {
+.center-icons__header .active {
   color: #1b74e4;
 }
 
-.center-icons__header i.active::after {
+.center-icons__header .active::after {
   content: "";
   position: absolute;
   top: 5.9rem;
@@ -130,10 +129,6 @@ body {
   border-bottom: 3.7px solid #1b74e4;
   width: 100%;
   transition: color 0.5s;
-}
-
-.center-icons__header a {
-  text-decoration: none;
 }
 
 .user-nav {
@@ -531,7 +526,6 @@ body {
   .main__view-img-box-last:last-child {
     margin-right: 34.5%;
   }
-
 }
 
 @media screen and (max-width: 950px) {
@@ -706,7 +700,7 @@ body {
     color: #65676b;
   }
 
-  .center__icon a{
+  .center__icon a {
     text-decoration: none;
   }
   /* .center__icon i.active {
