@@ -885,7 +885,7 @@ body {
 }
 
 /* ----------------Media Query Start------------ */
-@media screen and (min-width: 1450px) {
+@media screen and (min-width: 1449px) {
   .container {
     min-width: 2650px;
     width: 100%;
@@ -1235,6 +1235,13 @@ body {
     position: relative;
     cursor: pointer;
     color: #65676b !important;
+  }
+
+  .friend-icon {
+    font-size: 25px;
+    margin-right: 30px;
+    padding: 0px 0px 10px 0;
+    color: #65676b;
   }
 
   .center__icon a {

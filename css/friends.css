@@ -111,6 +111,7 @@ body {
 .center-icons__header a {
   color: #65676b;
   text-decoration: none;
+  
 }
 
 .center-icons__header:hover {
@@ -118,6 +119,10 @@ body {
 }
 
 .center-icons__header .active {
+  color: #1b74e4;
+}
+
+.friend-icon{
   color: #1b74e4;
 }
 
@@ -434,7 +439,7 @@ body {
 }
 
 /* ----------------Media Query Start------------ */
-@media screen and (min-width: 1450px) {
+@media screen and (min-width: 1596px) {
   .container {
     min-width: 2650px;
     width: 100%;
@@ -699,27 +704,34 @@ body {
     cursor: pointer;
     color: #65676b;
   }
+  .friend-icon {
+    font-size: 25px;
+    margin-right: 30px;
+    padding: 0px 0px 10px 0;
+    /* color: #65676b; */
+    color: #1b74e4 !important;
+  }
 
   .center__icon a {
     text-decoration: none;
   }
-  /* .center__icon i.active {
+   .center__icon i.active {
     color: #1b74e4;
-  } */
+  } 
 
   .center__icon:hover {
     background: #f0f2f5;
   }
 
-  /* .center__icon i.active::after {
+   .center__icon .active::after {
     content: "";
     position: absolute;
     top: 4.2rem;
-    right: -5px;
+    right: 25px;
     border-bottom: 3.7px solid #1b74e4;
-    width: 100%;
+    width: 80%;
     transition: color 0.5s;
-  } */
+  } 
 
   .center__icon-notification {
     position: absolute;
