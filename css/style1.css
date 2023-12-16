@@ -61,7 +61,7 @@ body {
   align-items: center;
   /* justify-content: space-evenly; */
   width: 25%;
-  padding-left: 15px;
+  margin-left: 5px;
 }
 
 .header__logo-fb {
@@ -73,7 +73,7 @@ body {
 .search__bar {
   background: #f0f2f5;
   padding: 1rem 5rem 1rem 0.8rem;
-  padding: 1rem 7rem 1rem 0.8rem;
+  /* padding: 1rem 7rem 1rem 0.8rem; */
   border-radius: 50px;
 }
 
@@ -1440,6 +1440,7 @@ hr {
     left: 20%;
   }
 }
+
 @media screen and (min-width: 1441px) {
   .container {
     min-width: 1442px;
