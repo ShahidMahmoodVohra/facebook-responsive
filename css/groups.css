@@ -889,21 +889,20 @@ body {
 
 /* ----------------Media Query Start------------ */
 
-  @media screen and (min-width: 1441px) {
-    .container {
-      min-width: 100%;
-      /* min-width: 2130px; */
-      width: 100%;
-      height: 100vh;
-    }
-
-    .header__mobile,
-    .center__icon-box,
-    .header__bottom-box {
-      display: none;
-    }
+@media screen and (min-width: 1441px) {
+  .container {
+    min-width: 100%;
+    /* min-width: 2130px; */
+    width: 100%;
+    height: 100vh;
   }
 
+  .header__mobile,
+  .center__icon-box,
+  .header__bottom-box {
+    display: none;
+  }
+}
 
 @media screen and (max-width: 1440px) {
   .container {

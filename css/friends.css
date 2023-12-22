@@ -114,7 +114,6 @@ body {
 .center-icons__header a {
   color: #65676b;
   text-decoration: none;
-  
 }
 
 .center-icons__header:hover {
@@ -125,7 +124,7 @@ body {
   color: #1b74e4;
 }
 
-.friend-icon{
+.friend-icon {
   color: #1b74e4;
 }
 
@@ -460,7 +459,7 @@ body {
   .sidebar {
     flex: 0 0 370px;
     background-color: #fff;
-    height: 100vh
+    height: 100vh;
   }
 
   .center-icons {
@@ -738,15 +737,15 @@ body {
   .center__icon a {
     text-decoration: none;
   }
-   .center__icon i.active {
+  .center__icon i.active {
     color: #1b74e4;
-  } 
+  }
 
   .center__icon:hover {
     background: #f0f2f5;
   }
 
-   .center__icon .active::after {
+  .center__icon .active::after {
     content: "";
     position: absolute;
     top: 4.2rem;
@@ -754,7 +753,7 @@ body {
     border-bottom: 3.7px solid #1b74e4;
     width: 80%;
     transition: color 0.5s;
-  } 
+  }
 
   .center__icon-notification {
     position: absolute;
